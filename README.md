@@ -22,6 +22,22 @@ API RESTful desarrollada con **Spring Boot 3.3.1**, **Java 17** y **MySQL**, par
 - IDE (IntelliJ, Eclipse, VS Code)
 
 ## ⚙️ Configuración
+1. **Configura tu application propierties con tus configuraciones de base de datos:**
+```
+#Configuraciones de Base de datos
+spring.datasource.url=jdbc:mysql://HOST:3306/TU BASE DE DATOS
+spring.datasource.username=TU USUARIO
+spring.datasource.password=TU CONTRASEÑA
+
+# Configuraciones de Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+# Puerto del servidor
+server.port=8080
+
+```
 
 1. **Crea la base de datos en MySQL:**
 
